@@ -6,6 +6,8 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
+<!-- END:nextjs-agent-rules -->
+
 # Constraints
 
 The stakeholder fixed these requirements. Don't ask about them, and don't change them. Plan everything else with the group: the product, not deadlines or how the work is assessed.
@@ -104,5 +106,3 @@ The behaviour, from the user's side. Not a list of files.
 - A part another role waits for, like a touchpoint, is its own small, early ticket
 - Ticket 01 is for everyone, on day 1: the tables and test data in `db/setup.sql`, `lib/db.ts`, `.env.example`, Vitest with one test, and the layout
 - Every ticket has one owner. _Blocked by_ lists only what really has to be done first. Numbers run across all files, blockers first
-
-<!-- END:nextjs-agent-rules -->
