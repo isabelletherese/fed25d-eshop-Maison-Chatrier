@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 @theme {
+  --color-ink: #272722;
   --font-sans: Arial, Helvetica, sans-serif;
   --font-serif: "Bodoni 72", Didot, Georgia, serif;
 }
 
 body {
   background: #f7f6f2;
-  color: #272722;
+  color: var(--color-ink);
 }

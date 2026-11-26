@@ -12,7 +12,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className="h-full antialiased">
       <body className="flex min-h-full flex-col">
         <header className="border-b border-stone-200">
-          <p className="bg-[#272722] px-4 py-2 text-center text-[0.65rem] uppercase tracking-wide text-white">
+          <p className="bg-ink px-4 py-2 text-center text-[0.65rem] uppercase tracking-wide text-white">
             Complimentary shipping &amp; signature packaging on every order
           </p>
           <div className="grid items-center gap-3 px-5 pt-4 text-xs sm:grid-cols-3 sm:px-12">
@@ -31,10 +31,24 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </header>
         {children}
         <footer className="mt-auto bg-[#ebe9e1] px-5 py-10 sm:px-12">
-          <Link href="/" className="font-serif text-2xl uppercase">
-            Maison Chatrier
-          </Link>
-          <p className="mt-6 border-t border-stone-300 pt-4 text-xs">
+          <div className="grid gap-8 sm:grid-cols-4">
+            <div className="sm:col-span-2">
+              <Link href="/" className="font-serif text-2xl uppercase">
+                Maison Chatrier
+              </Link>
+              <p className="mt-2 text-xs">Considered pieces. An enduring point of view.</p>
+            </div>
+            <div className="flex flex-col gap-3 text-xs">
+              <h2 className="uppercase tracking-wide">The collection</h2>
+              <Link href="/collection" className="hover:underline">Browse the collection</Link>
+            </div>
+            <div className="flex flex-col gap-3 text-xs">
+              <h2 className="uppercase tracking-wide">Your account</h2>
+              <Link href="/sign-in" className="hover:underline">Sign in</Link>
+              <Link href="/orders" className="hover:underline">My orders</Link>
+            </div>
+          </div>
+          <p className="mt-10 border-t border-stone-300 pt-4 text-xs">
             © 2026 Maison Chatrier
           </p>
         </footer>
